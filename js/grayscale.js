@@ -5,6 +5,42 @@
  */
 
 // jQuery to collapse the navbar on scroll
+
+function asia() { 
+        document.getElementById("question1").style.backgroundImage = "url('./img/question1-asia-bg.jpg')";
+        document.getElementById("question1").style.backgroundPosition= "no-repeat center center scroll";
+        document.getElementById("question1").style.backgroundSize= "100%";
+    }
+
+function africa() { 
+        document.getElementById("question1").style.backgroundImage = "url('./img/question1-africa-bg.jpg')";
+        document.getElementById("question1").style.backgroundPosition= "no-repeat center center scroll";
+        document.getElementById("question1").style.backgroundSize= "100%";
+    }
+
+function southamerica() { 
+        document.getElementById("question1").style.backgroundImage = "url('./img/question1-south-bg.jpg')";
+        document.getElementById("question1").style.backgroundPosition= "no-repeat center center scroll";
+        document.getElementById("question1").style.backgroundSize= "100%";
+    }
+
+function europe() { 
+        document.getElementById("question1").style.backgroundImage = "url('./img/question1-europe-bg.jpg')";
+        document.getElementById("question1").style.backgroundPosition= "no-repeat center scroll";
+        document.getElementById("question1").style.backgroundSize= "100%";
+    }
+
+function oceania() { 
+        document.getElementById("question1").style.backgroundImage = "url('./img/question1-oceania-bg.jpg')";
+        document.getElementById("question1").style.backgroundPosition= "no-repeat center center scroll";
+        document.getElementById("question1").style.backgroundSize= "100%";
+    }
+
+function question1initial() { 
+        document.getElementById("question1").style.backgroundImage = "url('./img/question1-bg.jpg')";
+        document.getElementById("question1").style.backgroundPosition= "no-repeat center center scroll";
+        document.getElementById("question1").style.backgroundSize= "100%";    }
+
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");

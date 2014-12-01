@@ -283,6 +283,11 @@ a:focus {
     width: 100%;
     padding-top: 100px;
 }
+
+.content-section-end {
+    width: 100%;
+    padding-top: 100px;
+}
 .download-section {
     width: 100%;
     padding: 50px 0;
@@ -349,6 +354,12 @@ a:focus {
         padding-top: 250px;
         background-color: #33CC33;
         background: url(../img/question6-bg.jpg) no-repeat top center scroll;
+        height: 100%
+    }
+
+    .content-section-end {
+        padding-top: 250px;
+        background-color: #33CC33;
         height: 100%
     }
 
