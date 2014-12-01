@@ -87,21 +87,21 @@
 
                         <div class="col-lg-4"></div>
                         <div class="col-lg-4 input-group input-group-lg"  style = "margin-bottom: 20px">
-                             <input type="text" class="form-control" placeholder="First Name">
+                             <input id="fname" type="text" class="form-control" placeholder="First Name">
                         </div>
 
                         <div class="col-lg-4"></div>
                         <div class="col-lg-4 input-group input-group-lg" style = "margin-bottom: 20px">
-                            <input type="text" class="form-control" placeholder="Last Name">
+                            <input id="lname" type="text" class="form-control" placeholder="Last Name">
                         </div>
 
                         <div class="col-lg-4"></div>
                         <div class="col-lg-4 input-group input-group-lg" style = "margin-bottom: 20px">
-                            <input type="text" class="form-control" placeholder="Duck ID">
+                            <input id="uoid" type="text" class="form-control" placeholder="Duck ID">
                         </div>
 
                         <div class="btn-group" role = "group" aria-label= "...">
-                             <a type = "button" href="#question1" class="btn btn-warning page-scroll">Submit</a>
+                             <a type = "button" onclick="getStudent()" href="#question1" class="btn btn-warning page-scroll">Submit</a>
                         </div>                
                         <!-- /input-group -->
                     </div><!-- /.col-lg-4 -->
@@ -115,11 +115,11 @@
           <div class="row">
                 <div class="col-lg-12">
                     <h2>Where are you interested in Studying Abroad?</h2>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question2" class="btn btn-danger btn-lg page-scroll" onmouseover = "asia()">Asia</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question2" class="btn btn-warning btn-lg page-scroll" onmouseover = "africa()">Africa</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question2" class="btn btn-success btn-lg page-scroll" onmouseover = "southamerica()">South America</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question2" class="btn btn-info btn-lg page-scroll" onmouseover = "europe()">Europe</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question2" class="btn btn-primary btn-lg page-scroll" onmouseover = "oceania()">Oceania</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question2" class="btn btn-danger btn-lg page-scroll" onclick="q_one(0)" onmouseover = "asia()">Asia</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question2" class="btn btn-warning btn-lg page-scroll" onclick="q_one(1)" onmouseover = "africa()">Africa</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question2" class="btn btn-success btn-lg page-scroll" onclick="q_one(2) "onmouseover = "southamerica()">South America</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question2" class="btn btn-info btn-lg page-scroll" onclick="q_one(3) "onmouseover = "europe()">Europe</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question2" class="btn btn-primary btn-lg page-scroll" onclick="q_one(4)" onmouseover = "oceania()">Oceania</a></div>
                 </div>
              </div>
     </section>
@@ -128,8 +128,8 @@
           <div class="row">
                 <div class="col-lg-12">
                     <h2>What kind of program are you interested in?</h2>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question3" class="btn btn-danger btn-lg page-scroll">A program that is led by a UO faculty member</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question3" class="btn btn-warning btn-lg page-scroll">A program where I am directly enrolled in a foreign institution</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question3" class="btn btn-danger btn-lg page-scroll" onclick="q_two(0)">A program that is led by a UO faculty member</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question3" class="btn btn-warning btn-lg page-scroll" onclick="q_two(1)">A program where I am directly enrolled in a foreign institution</a></div>
                 </div>
              </div>
     </section>
@@ -138,9 +138,9 @@
           <div class="row">
                 <div class="col-lg-12">
                     <h2>Which sounds most interesting to you?</h2>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question4" class="btn btn-danger btn-lg page-scroll">A rural location</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question4" class="btn btn-warning btn-lg page-scroll">An urban location</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question4" class="btn btn-success btn-lg page-scroll">A mix between and urban and a rural location</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question4" class="btn btn-danger btn-lg page-scroll" onclick="q_three(0)">A rural location</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question4" class="btn btn-warning btn-lg page-scroll" onclick="q_three(1)">An urban location</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question4" class="btn btn-success btn-lg page-scroll" onclick="q_three(2)">A mix between and urban and a rural location</a></div>
                 </div>
              </div>
     </section>
@@ -149,9 +149,9 @@
           <div class="row">
                 <div class="col-lg-12">
                     <h2>How much support do you think you’ll need while you’re abroad? (How independent do you want to be?)</h2>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question5" class="btn btn-danger btn-lg page-scroll">Lots of support</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question5" class="btn btn-warning btn-lg page-scroll">Some support</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question5" class="btn btn-success btn-lg page-scroll">Very little support</a>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question5" class="btn btn-danger btn-lg page-scroll" onclick="q_four(0)">Lots of support</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question5" class="btn btn-warning btn-lg page-scroll" onclick="q_four(1)">Some support</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question5" class="btn btn-success btn-lg page-scroll" onclick="q_four(2)">Very little support</a>
                     </div>
                 </div>
              </div>
@@ -161,9 +161,9 @@
           <div class="row">
                 <div class="col-lg-12">
                     <h2>Which of the following is most important for you to get out of your study abroad experience?</h2>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question6" class="btn btn-danger btn-lg page-scroll" >Credit towards my major/minor</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question6" class="btn btn-warning btn-lg page-scroll">A fun experience</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question6" class="btn btn-success btn-lg page-scroll">Professional experience/something to put on my resume</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question6" class="btn btn-danger btn-lg page-scroll" onclick="q_five(0)">Credit towards my major/minor</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question6" class="btn btn-warning btn-lg page-scroll" onclick="q_five(1)">A fun experience</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#question6" class="btn btn-success btn-lg page-scroll" onclick="q_fice(2)">Professional experience/something to put on my resume</a></div>
                 </div>
              </div>
     </section>
@@ -172,10 +172,10 @@
           <div class="row">
                 <div class="col-lg-12">
                     <h2>How long would you like to study abroad for?</h2>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#end" class="btn btn-danger btn-lg page-scroll">One term or less</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#end" class="btn btn-warning btn-lg page-scroll">Two terms</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#end" class="btn btn-success btn-lg page-scroll">A full academic year</a></div>
-                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#end" class="btn btn-info btn-lg page-scroll" onclick = "myFunction()">More than a year!</a></div>s
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#end" class="btn btn-danger btn-lg page-scroll" onclick="q_six(0)" >One term or less</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#end" class="btn btn-warning btn-lg page-scroll" onclick="q_six(1)" >Two terms</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#end" class="btn btn-success btn-lg page-scroll" onclick="q_six(2)" >A full academic year</a></div>
+                    <div style = "margin-bottom: 20px; margin-left: 40px" align ="left"><a href="#end" class="btn btn-info btn-lg page-scroll" onclick = "q_six(3)" >More than a year!</a></div>s
                 </div>
              </div>
     </section>
@@ -201,6 +201,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+	
+	<!-- Study Abroad Data Collection JS -->
+	<script src="js/dataStore.js"></script>
 
   
 
