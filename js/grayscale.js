@@ -7,39 +7,28 @@
 // jQuery to collapse the navbar on scroll
 
 function asia() { 
-        document.getElementById("question1").style.backgroundImage = "url('./img/question1-asia-bg.jpg')";
-        document.getElementById("question1").style.backgroundPosition= "no-repeat center center scroll";
-        document.getElementById("question1").style.backgroundSize= "100%";
+        document.getElementById("question1").style.background = "linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ), url('./img/question1-asia-bg.jpg'), no-repeat center center scroll";
     }
 
 function africa() { 
-        document.getElementById("question1").style.backgroundImage = "url('./img/question1-africa-bg.jpg')";
-        document.getElementById("question1").style.backgroundPosition= "no-repeat center center scroll";
-        document.getElementById("question1").style.backgroundSize= "100%";
+        document.getElementById("question1").style.backgroundImage = "linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ), url('./img/question1-africa-bg.jpg')";
     }
 
 function southamerica() { 
-        document.getElementById("question1").style.backgroundImage = "url('./img/question1-south-bg.jpg')";
-        document.getElementById("question1").style.backgroundPosition= "no-repeat center center scroll";
-        document.getElementById("question1").style.backgroundSize= "100%";
+        document.getElementById("question1").style.backgroundImage = "linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ), url('./img/question1-south-bg.jpg')";
     }
 
 function europe() { 
-        document.getElementById("question1").style.backgroundImage = "url('./img/question1-europe-bg.jpg')";
-        document.getElementById("question1").style.backgroundPosition= "no-repeat center scroll";
-        document.getElementById("question1").style.backgroundSize= "100%";
+        document.getElementById("question1").style.backgroundImage = "linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ), url('./img/question1-europe-bg.jpg')";
     }
 
 function oceania() { 
-        document.getElementById("question1").style.backgroundImage = "url('./img/question1-oceania-bg.jpg')";
-        document.getElementById("question1").style.backgroundPosition= "no-repeat center center scroll";
-        document.getElementById("question1").style.backgroundSize= "100%";
+        document.getElementById("question1").style.backgroundImage = "linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ) ,url('./img/question1-oceania-bg.jpg')";
     }
 
 function question1initial() { 
-        document.getElementById("question1").style.backgroundImage = "url('./img/question1-bg.jpg')";
-        document.getElementById("question1").style.backgroundPosition= "no-repeat center center scroll";
-        document.getElementById("question1").style.backgroundSize= "100%";    }
+        document.getElementById("question1").style.backgroundImage = "linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ), url('./img/question1-bg.jpg')";
+    }
 
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -59,6 +48,8 @@ $(function() {
         event.preventDefault();
     });
 });
+
+
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {

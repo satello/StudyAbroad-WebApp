@@ -11,6 +11,9 @@ body {
     color: #fff;
     background-color: #000;
 	overflow:hidden;
+    position: relative;
+    margin:0px;
+    padding:0px;
 	
 }
 
@@ -28,8 +31,14 @@ h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 100;
     letter-spacing: 1px;
+}
+
+@media(max-width:767px){
+    h2{
+        font-size:12px;
+    }
 }
 
 p {
@@ -69,6 +78,7 @@ a:focus {
     text-transform: lowercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #fff;
+    width: auto;
 }
 
 .navbar-custom .navbar-brand {
@@ -82,7 +92,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: #000;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -91,7 +101,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #000;
 }
 
 .navbar-custom .nav li.active {
@@ -136,7 +146,7 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -165,6 +175,7 @@ a:focus {
     .intro {
         height: 100%;
         padding: 0;
+
     }
 
     .intro .intro-body .brand-heading {
@@ -252,38 +263,52 @@ a:focus {
 
 .content-section {
     width: 100%;
-    padding-top: 100px;
+    height: 100%;
+    padding-top:100px;
     background-color: #33CC33;
 }
 
 .content-section1 {
     width: 100%;
+    height: 100%;
     padding-top: 100px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(../img/question1-bg.jpg) no-repeat top center scroll;
 }
 
 .content-section2 {
     width: 100%;
+    height: 100%;
     padding-top: 100px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(../img/question2-bg.jpg) no-repeat center center scroll;
 }
 
 .content-section3 {
     width: 100%;
+    height: 100%;
     padding-top: 100px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(../img/question3-bg.jpg) no-repeat bottom center scroll;
 }
 
 .content-section4 {
     width: 100%;
+    height: 100%;
     padding-top: 100px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(../img/question4-bg.jpg) no-repeat center center scroll;
 }
 
 .content-section5 {
     width: 100%;
+    height: 100%;
     padding-top: 100px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(../img/question5-bg.jpg) no-repeat bottom center scroll;
 }
 
 .content-section6 {
     width: 100%;
+    height: 100%;
     padding-top: 100px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .7) ), url(../img/question6-bg.jpg) no-repeat top center scroll;
+
 }
 
 .content-section-end {
@@ -310,7 +335,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top:250px;
         background-color: #33CC33;
         padding-bottom: 250px;
     }
@@ -318,51 +343,38 @@ a:focus {
     .content-section1 {
         padding-top: 250px;
         background-color: #33CC33;
-        background: url(../img/question1-bg.jpg) no-repeat top center scroll;
-        height: 100%
 
     }
 
     .content-section2 {
         padding-top: 250px;
         background-color: #33CC33;
-        background: url(../img/question2-bg.jpg) no-repeat center center scroll;
         background-size: 100%;
-        height: 100%
     }
 
     .content-section3 {
         padding-top: 250px;
         background-color: #33CC33;
-        background: url(../img/question3-bg.jpg) no-repeat bottom center scroll;
-        height: 100%
     }
 
     .content-section4 {
         padding-top: 250px;
         background-color: #33CC33;
-        background: url(../img/question4-bg.jpg) no-repeat center center scroll;
-        height: 100%
     }
 
     .content-section5 {
         padding-top: 250px;
         background-color: #33CC33;
-        background: url(../img/question5-bg.jpg) no-repeat bottom center scroll;
-        height: 100%
     }
 
     .content-section6 {
         padding-top: 250px;
         background-color: #33CC33;
-        background: url(../img/question6-bg.jpg) no-repeat top center scroll;
-        height: 100%
     }
 
     .content-section-end {
         padding-top: 250px;
         background-color: #33CC33;
-        height: 100%
     }
 
     .download-section {
@@ -375,13 +387,17 @@ a:focus {
     }
 }
 
-.btn {
+.question-btn {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
 }
 
 .btn-default {
@@ -397,6 +413,16 @@ a:focus {
     color: #000;
     background-color: #219ab3;
 }
+
+@media(min-width:767px) {
+    .question-btn{
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.33;
+        border-radius: 6px;
+    }
+}
+
 
 ul.banner-social-buttons {
     margin-top: 0;
