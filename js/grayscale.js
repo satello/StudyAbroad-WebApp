@@ -5,6 +5,10 @@
  */
 
 // jQuery to collapse the navbar on scroll
+document.ontouchmove = function(event){
+    event.preventDefault();
+}
+
 
 function asia() { 
         document.getElementById("question1").style.background = "linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ), url('./img/question1-asia-bg.jpg'), no-repeat center center scroll";
@@ -203,3 +207,4 @@ function init() {
         icon: image
     });
 }
+
